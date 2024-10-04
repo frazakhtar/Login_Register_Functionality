@@ -1,16 +1,21 @@
-/* From Uiverse.io by Yaya12085 */ 
-.form {
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.registerForm {
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 350px;
-    background-color: #fff;
+    background-color: #aca9af;
     padding: 20px;
     border-radius: 20px;
     position: relative;
   }
   
-  .title {
+  .registerTitle {
     font-size: 28px;
     color: royalblue;
     font-weight: 600;
@@ -21,7 +26,7 @@
     padding-left: 30px;
   }
   
-  .title::before,.title::after {
+  .registerTitle::before,.registerTitle::after {
     position: absolute;
     content: "";
     height: 16px;
@@ -31,13 +36,13 @@
     background-color: royalblue;
   }
   
-  .title::before {
+  .registerTitle::before {
     width: 18px;
     height: 18px;
     background-color: royalblue;
   }
   
-  .title::after {
+  .registerTitle::after {
     width: 18px;
     height: 18px;
     animation: pulse 1s linear infinite;

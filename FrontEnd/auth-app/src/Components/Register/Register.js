@@ -3,8 +3,9 @@ import './Register.css'
 
 const Register = () => {
   return (
-<form className="form">
-    <p className="title">Register </p>
+    <div className="container">
+<form className="registerForm">
+    <p className="registerTitle">Register </p>
     <p className="message">Signup now and get full access to our app. </p>
         <div className="flex">
         <label>
@@ -32,8 +33,9 @@ const Register = () => {
         <span>Confirm password</span>
     </label>
     <button className="submit">Submit</button>
-    <p className="signin">Already have an acount ? <a href="#">Signin</a> </p>
+    <p className="signin">Already have an acount ? <a href="/login">Signin</a> </p>
 </form>
+</div>
   )
 }
 
