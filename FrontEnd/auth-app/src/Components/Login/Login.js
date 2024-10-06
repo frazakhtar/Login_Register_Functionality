@@ -31,7 +31,10 @@ const Login = () => {
               </a>
             </div>
           </div>
-          <button className="sign" onClick={() => handleLogin()}>Sign in</button>
+          <button className="sign" onClick={(e) => {
+            e.preventDefault();
+            handleLogin();
+            }}>Sign in</button>
         </form>
         <div className="social-message">
           <div className="line"></div>
